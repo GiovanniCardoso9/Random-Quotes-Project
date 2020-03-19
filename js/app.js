@@ -1,5 +1,4 @@
-//immediate invoked function expression
-(function() {
+(function(){
   const quotes = [
     {
       quote:
@@ -29,16 +28,7 @@
       quote:
         "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
       author: " Tyne Daly"
-    }
-  ];
 
   const btn = document.getElementById("generate-btn");
 
-  btn.addEventListener("click", function() {
-    let random = Math.floor(Math.random() * quotes.length);
-    console.log(random);
 
-    document.getElementById("quote").textContent = quotes[random].quote;
-    document.querySelector(".author").textContent = quotes[random].author;
-  });
-})();
